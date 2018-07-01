@@ -1,0 +1,32 @@
+---
+name: Button
+route: /
+---
+
+import Button from './Button'
+import { Playground, PropsTable } from 'docz'
+
+# Button
+
+## Properties
+<PropsTable of={Button} />
+
+## Normal
+<Playground>
+ <Button>Button Primary</Button>
+ <Button type="danger">Button Danger</Button>
+ <Button type="info">Button Info</Button>
+ <Button type="success">Button Success</Button>
+ <Button type="default">Button Default</Button>
+</Playground>
+
+## Outline
+<Playground>
+ <Button outline={true}>Button Outline</Button>
+</Playground>
+
+## Rounded
+<Playground>
+ <Button rounded={true}>Button Outline</Button>
+</Playground>
+
