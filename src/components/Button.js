@@ -50,8 +50,11 @@ const Button = ({ children, type, outline, rounded }) => (
 );
 
 Button.propTypes = {
+  /** type of button  */
   type: pT.string,
+  /** change button to outline  */
   outline: pT.bool,
+  /** change button to rounded  */
   rounded: pT.bool
 };
 
