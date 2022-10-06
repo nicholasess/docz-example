@@ -4,10 +4,11 @@
   "private": true,
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "styled-components": "^3.3.3"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-scripts": "5.0.0",
+    "styled-components": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,6 +16,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "docz:dev": "docz dev",
-    "docz:build": "docz build"
-  }
+    "docz:build": "docz build",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
